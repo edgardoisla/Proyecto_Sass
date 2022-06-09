@@ -1,0 +1,14 @@
+.proyImg{
+    object-fit:$of;
+    width:$w100;
+    height:$h100;
+    }
+    
+  #demo{
+    inline-size: $size;
+    margin:$margin;
+  }
+  
+  #demo:hover{
+    transform:$hover;
+  }
