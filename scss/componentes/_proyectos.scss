@@ -1,14 +1,20 @@
+$of: cover;
+$w100:100%;
+$h100:100%;
+$mgnA:auto;
+$tfs: scale(1.05);
+
 .proyImg{
-    object-fit:$of;
-    width:$w100;
-    height:$h100;
-    }
-    
-  #demo{
-    inline-size: $size;
-    margin:$margin;
+  object-fit: $of;
+  width:$w100;
+  height:$h100;
   }
   
-  #demo:hover{
-    transform:$hover;
-  }
+#demo{
+  inline-size: 95%;
+  margin:$mgnA;
+}
+
+#demo:hover{
+  transform: $tfs;
+}
