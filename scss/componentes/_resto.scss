@@ -1,0 +1,296 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  
+  html{
+    height: 100%;
+  }
+  
+  hr{
+    margin:0;
+  }
+  
+  /* Configuración Fondo*/
+  
+  body{
+    min-height: 100%;
+    background-image: url("../assets/images/fondo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  
+  /*MOBILE*/
+  
+  .contenedor > * {
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .contenedor {  
+    display:grid;
+    gap: 5px;
+    column-gap: 10px;
+    grid-template:
+    "header"  50px
+    "main" auto
+    "pie" 50px;
+  }
+  
+  .ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .foot{
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  
+  .navbar{
+    display: block;
+  
+  }
+  
+  a{
+    align-items: center;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 10px;
+    color: aliceblue;
+  }
+  
+  
+  h1{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align:start;
+    padding-left: 10px;
+    margin: 3px;
+  }
+  
+  .fsd{
+    font-family: 'Courgette';
+    font-weight: 400;
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    font-size:1.2rem;
+    text-align: end;
+    padding-right: 10px;
+  }
+  p {
+    padding: 15px 5px 0 5px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.6rem;
+  
+  }
+  
+  .iconos{
+    height: 22px;
+    width: 22px;
+  }
+  
+   /* About */
+  
+  .datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .datos_li{
+    display: grid;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size:larger;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size:12px ;
+    text-align: left;
+    justify-content:left;
+    align-items: center;
+  }
+  
+  /* Skills */
+  
+  td{
+    text-align:left;
+  }
+  
+  /* Projects */
+  
+  .proyImg{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    }
+    
+  #demo{
+    inline-size: 95%;
+    margin:auto
+  ;
+  }
+  
+  #demo:hover{
+    transform: scale(1.05);
+  }
+  
+  
+  /* MAQUETACION TABLET */
+  
+  @media (min-width:768px){
+    .contenedor {  
+      display:grid;
+      gap: 3px;
+      column-gap: 10px;
+      grid-template:
+      "header main pie" auto / 4em auto 4em;
+    }
+    
+    
+    .ul{
+      display: flex;
+      flex-direction: column;
+      height:100%;
+      align-items: center;
+      justify-content:space-around;  
+      
+    }
+    
+    h1{
+      font-size: 3rem;
+    }
+    
+    .fsd{
+      font-size:1.6rem;
+      font-weight: 600;
+    
+    }
+    p {
+      font-size: 0.8rem;
+      font-style: oblique;
+      padding: 10px;
+    
+    }
+  
+    .iconos{
+      height: 25px;
+      width: 25px;
+    }
+  
+    a{
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 12px;
+      color: aliceblue;
+    }
+  
+    /* About */
+   
+   .datos{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .datos_li{
+      font-family: 'Roboto Slab', sans-serif;
+      font-size:larger;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      font-size:90%;
+      text-align: left;
+    }
+  }
+  
+  /* Skills */
+  
+  .presentation{
+    grid-area: presentation;
+  }
+  
+  .listSkill{
+    display: flex;
+  }
+  
+  .skills_h2{
+    font-family: 'Roboto Slab';
+    font-size:small;
+    text-align: left;
+    width: 120px;
+    align-items: left;
+    
+  }
+  
+  /*MAQUETACION DESKTOP*/
+  
+  @media (min-width:1024px){
+   
+    
+    .ul{
+      display: flex;
+      flex-direction: column;
+      height:100%;
+      align-items: center;
+      justify-content:space-around;
+      margin-bottom: 0;  
+      
+    }
+    
+    h1{
+      font-size: 4rem;
+    }
+    
+    .fsd{
+      font-size:2rem;
+      font-weight: 400;
+    
+    }
+  
+    p {
+      font-size: 1rem;
+      font-style: oblique;
+      padding: 10px;
+    
+    }
+  
+    
+    /* About */
+   
+   .data{
+      height: 70%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    .datos{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  .datos_li{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size:larger;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size:120%;
+    text-align: left;
+    }
+  }
